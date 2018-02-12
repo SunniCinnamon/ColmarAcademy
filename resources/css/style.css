@@ -34,24 +34,59 @@ html {
 }
 
 h1 {
-  font-family: 'Alegreya';
+  font-family: 'Alegreya', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 h2 {
-  font-family: 'Alegreya';
+  font-family: 'Alegreya', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 p {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+  padding: 8px 16px 24px 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  #logo-first {
+    display: none;
+  }
+  #logo-second {
+    display: none;
+  }
+
+  nav .text {
+    display: none;
+  }
+.information {
+  display: none;
+  }
+
+.main {
+  display: none;
+}
+}
+
+@media only screen and (min-width: 481px) {
+  nav .icons {
+    display: none;
+  }
+
+  .information-mobile {
+    display: none;
+  }
+
+  .main-mobile {
+    display: none;
+  }
 }
 
 /* Fixed header */
@@ -63,6 +98,7 @@ header {
   width: 100%;
   background-color: white;
   align-items: center;
+  margin: 0px 24px;
 }
 
 header img {
@@ -100,25 +136,6 @@ nav span {
   font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 480px) {
-  nav .text {
-    display: none;
-  }
-.information {
-  display: none;
-}
-
-}
-
-@media only screen and (min-width: 481px) {
-  nav .icons {
-    display: none;
-  }
-
-  .infomration-mobile {
-    display: none;
-  }
-}
 
 /* Main content */
 
@@ -135,7 +152,7 @@ nav span {
 .banner {
   background-color: grey;
   width: 100%;
-  border: 5px solid red;
+
 
 }
 
@@ -145,14 +162,112 @@ nav span {
   display: inline-block;
 }
 
-.banner .text {
+.banner .copy {
   display: inline-block;
   width: 30%;
-
+  vertical-align: middle;
 }
 
 .button {
   background-color: black;
+width: 100%;
+margin-top: 1em;
+color: white;
+padding: 8px 0px;
+text-align: center;
+}
+
+.information {
+  margin-bottom: 1rem;
+}
+
+.main img{
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+.main {
+  width: 60%;
+  margin-left: 24px;
+  display: inline-block;
+}
+
+.main p {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.author {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.secondary {
+  width: 37%;
+  display: inline-block;
+}
+
+.single {
+  border: 1px solid grey;
+}
+
+.single .text {
+  width: 60%;
+  display: inline-block;
+}
+
+.single img {
   width: 30%;
-  color: white;
+  padding: 16px;
+}
+
+.single p{
+  padding: 8px 0px;
+}
+
+.courses {
+  background-color: grey;
+  padding: 32px 72px;
+}
+
+.courses h1 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  width: 25%;
+  display: inline-block;
+  justify-content: space-between;
+  background-color: white;
+  margin: 32px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  padding: 16px;
+}
+
+.thesis {
+  margin: 32px 24px;
+}
+
+.thesis h1 {
+  text-align: center;
+}
+
+.main video {
+  width: 100%;
+  margin-top: 32px;
+  margin-right: 24px;
+  margin-bottom: 24px;
 }

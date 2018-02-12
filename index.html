@@ -8,15 +8,15 @@
   <body>
     <!-- fixed heading -->
     <header>
-      <img scr="./resources/images/ic-logo.svg">
+      <img src="./resources/images/ic-logo.svg">
       <span id="logo-first">COLMAR</span><span id="logo-second">ACADEMY</span>
       <nav>
-        <div="icons">
+        <div class="icons">
           <a href="#"><img src="./resources/images/ic-on-campus.svg"></a>
           <a href="#"><img src="./resources/images/ic-online.svg"></a>
           <a href="#"><img src="./resources/images/ic-login.svg"></a>
         </div>
-        <div="text">
+        <div class="text">
           <span>On campus</span>
           <span>Online</span>
           <span>For companies</span>
@@ -26,12 +26,12 @@
     </header>
 
     <!-- main content -->
-      <div="main-content">
+      <div class="main-content">
 
     <!-- banner -->
-      <div="banner">
+      <div class="banner">
         <img src="./resources/images/banner.jpg">
-        <div="copy">
+        <div class="copy">
           <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div class="button"><p>Start here</p></div>
@@ -39,48 +39,56 @@
       </div>
 
     <!-- first section -->
-      <div="information">
-        <div="main">
+      <div class="information">
+        <div class="main">
           <img src="./resources/images/information-main.jpg">
           <h1>It doesn't hurt to keep practicing</h1>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
-        <div="secondary">
-          <img src="./resources/images/information-orientation.jpg">
-          <h2>Orientation date</h2>
-          <p>Tue 10/11 &amp; Wed 110/12: 8am-3pm</p>
-          <p><a href="#">Read more</a></p>
-        </div>
-        <div="secondary">
-          <img src="./resources/images/information-campus.jpg">
-          <h2>Our campus</h1>
-          <p>Find which campus is close by you</p>
-          <p><a href="#">Read more</a></p>
-        </div>
-        <div="secondary">
-          <img src="./resources/images/information-guest-lecture.jpg">
-          <h2>Our guest lecture</h2>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <p><a href="#">Read more</a></p>
+        <div class="secondary">
+          <div class="single">
+            <img src="./resources/images/information-orientation.jpg">
+            <div class="text">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 &amp; Wed 110/12: 8am-3pm</p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="single">
+            <img src="./resources/images/information-campus.jpg">
+            <div class="text">
+              <h2>Our campus</h1>
+              <p>Find which campus is close by you</p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="single">
+            <img src="./resources/images/information-guest-lecture.jpg">
+            <div class="text">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
         </div>
       </div>
 
     <!-- first section mobile -->
-      <div="information-mobile">
-        <div="sondary-mobile">
+      <div class="information-mobile">
+        <div class="secondary-mobile">
           <img src="./resources/images/information-orientation-mobile.jpg">
           <h2>Orientation date</h2>
           <p>Tue 10/11 &amp; Wed 110/12: 8am-3pm</p>
           <p><a href="#">Read more</a></p>
         </div>
-        <div="secondary-mobile">
+        <div class="secondary-mobile">
           <img src="./resources/images/information-campus-mobile.jpg">
           <h2>Our campus</h1>
           <p>Find which campus is close by you</p>
           <p><a href="#">Read more</a></p>
         </div>
-        <div="secondary-mobile">
+        <div class="secondary-mobile">
           <img src="./resources/images/information-guest-lecture-mobile.jpg">
           <h2>Our guest lecture</h2>
           <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -89,70 +97,80 @@
       </div>
 
     <!-- second section -->
-      <div="courses">
+      <div class="courses">
         <h1>Start learning</h1>
-        <div="card">
-          <img src="./resources/images/course-software.jpg">
-          <h2>Software engineering</h2>
-          <p class="subheading">COURSES</p>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="row">
+          <div class="card">
+            <img src="./resources/images/course-software.jpg">
+            <h2>Software engineering</h2>
+            <p class="subheading">COURSES</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/course-computer-art.jpg">
+            <h2>Computer art</h2>
+            <p class="subheading">COURSES</p>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/course-design.jpg">
+            <h2>Design</h2>
+            <p class="subheading">COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
         </div>
-        <div="card">
-          <img src="./resources/images/course-computer-art.jpg">
-          <h2>Computer art</h2>
-          <p class="subheading">COURSES</p>
-          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
-        </div>
-        <div="card">
-          <img src="./resources/images/course-design.jpg">
-          <h2>Design</h2>
-          <p class="subheading">COURSES</p>
-          <p>User Experience Design, User Research, Visual Design</p>
-        </div>
-        <div="card">
-          <img src="./resources/images/course-data.jpg">
-          <h2>Data</h2>
-          <p class="subheading">COURSES</p>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
-        </div>
-        <div="card">
-          <img src="./resources/images/course-business.jpg">
-          <h2>Business</h2>
-          <p class="subheading">COURSES</p>
-          <p>Product Development, Business Development, Startup</p>
-        </div>
-        <div="card">
-          <img src="./resources/images/course-marketing.jpg">
-          <h2>Marketing</h2>
-          <p class="subheading">COURSES</p>
-          <p>Analytics, Content Marketing, mobile Marketing</p>
+        <div class="row">
+          <div class="card">
+            <img src="./resources/images/course-data.jpg">
+            <h2>Data</h2>
+            <p class="subheading">COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/course-business.jpg">
+            <h2>Business</h2>
+            <p class="subheading">COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/course-marketing.jpg">
+            <h2>Marketing</h2>
+            <p class="subheading">COURSES</p>
+            <p>Analytics, Content Marketing, mobile Marketing</p>
+          </div>
         </div>
       </div>
 
     <!-- third section -->
-      <div="thesis">
+      <div class="thesis">
         <h1>Thesis exhibit</h1>
-        <div="main">
+        <div class="main">
           <video src="./resources/videos/thesis.mp4" width="60%" height="auto" controls>
             Video not supported
           </video>
           <h2>Reimagine urban</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div="main-mobile">
+        <div class="main-mobile">
           <video src="./resources/videos/thesis.mp4" width="60%" height="auto" controls>
           Video not supported
           </video>
         </div>
-        <div="secondary">
-          <img src="./resources/images/thesis-fisma.jpg">
-          <h2>Fisma: Design and Prototype</h1>
-          <p>Designer showcase of new prototype product</p>
-        </div>
-        <div="secondary">
-          <img src="./resources/images/thesis-now-and-then.jpg">
-          <h2>Now and then</h1>
-          <p>Research study about New York</p>
+        <div class="secondary">
+          <div class="single">
+            <img src="./resources/images/thesis-fisma.jpg">
+            <div class="text">
+              <h2>Fisma: Design and Prototype</h1>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="single">
+            <img src="./resources/images/thesis-now-and-then.jpg">
+            <div class="text">
+              <h2>Now and then</h1>
+              <p>Research study about New York</p>
+            </div>
+          </div>
         </div>
       </div>
 
