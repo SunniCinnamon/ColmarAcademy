@@ -2,7 +2,12 @@
 
 html {
   font-size: 32px;
+  color: #ffffff;
+}
 
+a {
+  text-decoration: underline;
+  color: #b0003a;
 }
 @font-face {
   font-family: 'Alegreya';
@@ -104,13 +109,13 @@ header {
   background-color: white;
   align-items: center;
   padding: 0rem 0.75rem;
+  background-color: #002984;
 }
 
 header img {
   margin-right: .75rem;
   height: 1rem;
   width: 1rem;
-  color: black;
 }
 
 header #logo-first {
@@ -157,14 +162,14 @@ header .text {
 /* Banner */
 
 .banner {
-  background-color: #eeeeee;
+  background-color: #3f51b5;
   width: 100%;
 
 }
 
 
 .button {
-  background-color: black;
+  background-color: #e81e62;
 width: 100%;
 margin-top: 1rem;
 color: white;
@@ -176,7 +181,8 @@ margin-bottom: 1rem;
 /*first section*/
 
 .information {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ff608f;
 }
 
 .main img{
@@ -229,7 +235,7 @@ margin-bottom: 1rem;
 /* second section */
 
 .courses {
-  background-color: #eeeeee;
+  background-color: #757de8;
   padding: 1rem 0;
 }
 
@@ -245,7 +251,7 @@ margin-bottom: 1rem;
   width: 30%;
   display: inline-block;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #ff608f;
   margin: 0.5rem;
 }
 
@@ -267,7 +273,8 @@ margin-bottom: 1rem;
 /* third section */
 
 .thesis {
-  margin: 1rem 0.75rem;
+  padding: 1rem 0.75rem;
+  background-color: #ff608f;
 }
 
 .thesis h1 {
@@ -292,27 +299,23 @@ margin-bottom: 1rem;
 
 /* footer */
 
-.footer {
+footer {
   width: 100%;
   display: flex;
+  background-color: #3f51b5;
+  border-top: 1px solid #eeeeee;
 }
 
-.footer p {
+footer p {
   margin-left: 0.75rem;
-  border-top: 1px solid #eeeeee;
   padding-top: 0.5rem;
 }
 
-.footer span {
+footer span {
   display: inline-block;
   padding: 0 0.25rem;
   font-size: 0.8rem;
   text-align: right;
-
-}
-
-.footer-two {
- text-align: right;
 }
 
 @media only screen and (max-width: 480px) {
@@ -335,9 +338,6 @@ margin-bottom: 1rem;
     margin: 0;
   }
 
-  h2 {
-    text-align: center;
-  }
 
 .thesis-secondary {
     display: none;
@@ -349,6 +349,7 @@ margin-bottom: 1rem;
 
   .information-mobile {
     display: block;
+    background-color: #ff608f;
   }
 
 .main {
@@ -356,6 +357,10 @@ margin-bottom: 1rem;
 }
 .thesis {
   margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding-bottom: 0.75rem;
 }
 
 .main-video {
@@ -395,8 +400,18 @@ video {
     display: none;
   }
 
-  .secondary-mobile img{
+  .secondary-mobile img {
     margin: 0.5rem;
+    width: 100%;
+  }
+
+  .secondary-mobile h2 {
+    margin-left: 1rem;
+    text-align: left;
+  }
+
+  .secondary-mobile p {
+    margin-left: 1rem;
   }
 
   .courses {
@@ -404,14 +419,21 @@ video {
   }
 .courses-mobile {
   display: block;
+  padding-bottom: 1rem;
+  background-color: #757ce8;
+}
+
+.courses-mobile h1 {
+  text-align: center;
 }
   .mobile-card {
-
-    background-color: #eeeeee;
+    background-color: #ff608f;
     padding-left: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
     margin-bottom: 0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   footer span {
